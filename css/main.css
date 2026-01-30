@@ -1,0 +1,28 @@
+/* @import url('./box.css'); */
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    transition: 1s;
+}
+.box:focus {
+    width: 300px;
+    background-color: tomato;
+}
+[type='password'] {
+    background-color: aliceblue;
+}
+input:focus {
+    background-color: orange;
+}
+.box::before {
+    content: 'BEFORE!';
+}
+.box::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: royalblue;
+}
